@@ -1,0 +1,32 @@
+.profile-intro__string {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 905px) {
+    .profile-intro__string {
+        max-width: 200px;
+
+    }  
+}
+
+@media screen and (max-width: 564px) {
+    .profile-intro__string {
+        max-width: 370px;
+
+    }  
+}
+
+@media screen and (max-width: 320px) {
+    .profile-intro__string {
+        margin: 0px 31px 0px 29px;
+        min-width: 220px;
+        width: 78.57%;
+
+    }  
+}

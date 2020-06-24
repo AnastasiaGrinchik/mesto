@@ -1,0 +1,49 @@
+.profile__button-add {
+    max-width: 150px;
+    max-height: 50px;
+    color: #FFFFFF;;
+    background-color: black;
+    padding: 14px 64px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .profile__button-add {
+        padding: 14px 32px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .profile__button-add {
+        padding: 10px 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile__button-add {
+        padding: 4px 9px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .profile__button-add {
+        padding: 2px 4.5px;
+        margin: 36px auto 0px;
+        margin-left: auto;
+        width: 100%;
+        max-width: 370px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile__button-add {
+        margin: 36px auto 0px;
+        margin-left: auto;
+        width: 100%;
+        max-width: 282px;
+    }  
+}

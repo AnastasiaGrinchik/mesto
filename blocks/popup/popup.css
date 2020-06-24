@@ -1,0 +1,36 @@
+@import url(./__container/popup__container.css);
+@import url(./__button-close/popup__button-close.css);
+@import url(./__title/popup__title.css);
+@import url(./__name/popup__name.css);
+@import url(./__profession/popup__profession.css);
+@import url(./__button-save/popup__button-save.css);
+@import url(./_opened/popup_opened.css);
+
+.popup {
+    position: fixed;
+    max-width: 520px;
+    max-height: 377px;
+    width: 66.56%;
+    display: none;
+    left: 50%;
+    margin-left: -260px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 410px;
+        margin-left: -205px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .popup {
+        max-width: 300px;
+        margin-left: -150px;
+    }
+} 
+
+.popup_opened{
+    display: block;
+}

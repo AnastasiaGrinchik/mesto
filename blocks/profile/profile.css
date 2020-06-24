@@ -1,0 +1,40 @@
+@import url(./__button-add/profile__button-add.css);
+@import url(./__button-add-icon/profile__button-add-icon.css);
+@import url(./__avatar/profile__avatar.css);
+
+.profile {
+    max-width: 882px;
+    max-height: 120px;
+    width: 68.9%;
+    margin: 40px auto 45px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+        margin: 21px auto 18px;
+    }
+} 
+
+@media screen and (max-width: 564px) {
+    .profile {
+        width: 88.125%;
+        min-width: 320px;
+        min-height: 286px;
+        display: flex;
+        flex-direction: column;
+        margin: 42px auto 36px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .profile {
+        width: 88.125%;
+        min-width: 282px;
+        min-height: 286px;
+        display: flex;
+        flex-direction: column;
+        margin: 42px auto 36px;
+    }
+}

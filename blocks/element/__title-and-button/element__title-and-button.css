@@ -1,0 +1,23 @@
+.element__title-and-button {
+    width: 87.23%;
+    max-width: 246px;
+    max-height: 23px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 31px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .element__title-and-button {
+        margin: 5px auto 10px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .element__title-and-button {
+        margin: 15px auto 10px;
+        
+    }
+}
