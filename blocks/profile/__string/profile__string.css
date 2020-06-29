@@ -1,6 +1,6 @@
-.profile-intro__string {
+.profile__string {
     width: 100%;
-    height: 43px;
+    max-height: 43px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -9,24 +9,23 @@
 }
 
 @media screen and (max-width: 905px) {
-    .profile-intro__string {
+    .profile__string {
         max-width: 200px;
-
     }  
 }
 
 @media screen and (max-width: 564px) {
-    .profile-intro__string {
+    .profile__string {
         max-width: 370px;
 
     }  
 }
 
 @media screen and (max-width: 320px) {
-    .profile-intro__string {
-        margin: 0px 31px 0px 29px;
-        min-width: 220px;
+    .profile__string {
+        margin: 0px 31px 14px 29px;
+        max-width: 220px;
         width: 78.57%;
-
+        max-height: 38px;
     }  
 }

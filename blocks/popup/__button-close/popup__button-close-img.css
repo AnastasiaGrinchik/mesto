@@ -1,0 +1,25 @@
+.popup__button-close-img {
+    width: 40.7px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__button-close-img {
+        top: 0px;
+        left: 362px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .popup__button-close-img {
+        top: 0px;
+        left: 265px;
+    }
+} 
+
+@media screen and (max-width: 405px) {
+    .popup__button-close-img {
+        top: 20px;
+        left: 265px;
+    }
+} 
+

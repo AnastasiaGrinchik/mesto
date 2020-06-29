@@ -1,10 +1,5 @@
 .popup__profession {
-    /* margin-left: 36px; */
-    width: 358px;
-    height: 27.26px;
-    border: none;
-    margin: auto;
-    border-bottom: 1px solid #000000;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -18,7 +13,7 @@
 @media screen and (max-width: 480px) {
     .popup__profession {
         width: 200px;
-        margin: 0px 20px 20px;
+        /* margin: 0px 20px 20px; */
         font-size: 15px;
     }
 } 

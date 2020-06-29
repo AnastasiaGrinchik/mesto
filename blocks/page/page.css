@@ -1,21 +1,20 @@
-@import url("./_dark/page_dark.css");
-
 
 .page {
     width: 100%;
-    max-width: 1280px;
+    max-width: 882px;
     min-width: 320px;
     max-height: 1217px;
     height: 100%;
     background: #000000;
     color: #FFFFFF;
     font-family: Inter;
-    
     margin: 0;
+    margin: auto;
     padding: 0;
-    font-family: "Inter", Arial, sans-serif;;
+    font-family: "Inter", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
+    box-sizing: border-box;
  
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,3 +22,4 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
 }
+
