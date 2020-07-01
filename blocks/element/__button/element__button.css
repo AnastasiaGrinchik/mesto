@@ -5,3 +5,8 @@
     background: #FFFFFF;
     cursor: pointer;
 }
+
+.element__button:hover {
+    transition: 0.3s;
+    opacity: 0.6;
+}

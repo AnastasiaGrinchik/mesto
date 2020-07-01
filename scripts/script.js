@@ -7,44 +7,33 @@ let popupButtonSave = document.querySelector(".popup__button-save");
 let profileName = document.querySelector(".profile__name");
 let profileDescription = document.querySelector(".profile__description");
 
-let formElement = document.querySelector(".popup__form")
-let popupName = document.querySelector(".popup__name");
-let popupProfession = document.querySelector(".popup__profession");
+let formElement = document.querySelector(".popup__form");
+let popupName = document.querySelector(".popup__input_type_name");
+let popupProfession = document.querySelector(".popup__input_type_profession");
 
 
-//функция добавляет класс если его нет, убирает если класс есть. Также 
-// функция заполняет инпуты если есть класс popup__opened
+//функция popupToggle проверяет отсутствие класса popup__opened. Если
+// отсутствует - заполняет инпуты
+// добавляет класс popup__opened если его нет, убирает если класс есть. 
 let popupToggle = function() {
-    popup.classList.toggle("popup_opened");
-    if (popup.classList.contains("popup_opened")) {
-        popupName.value = profileName.textContent;
-        popupProfession.value = profileDescription.textContent;
-    } else {
-        popupName.value = "";
-        popupProfession.value = "";
+    if (!popup.classList.contains("popup_opened")) {
+        popupName.value = profileName.textContent; 
+        popupProfession.value = profileDescription.textContent; 
     }
+    popup.classList.toggle("popup_opened");
 }
 
 profileIntroButtonEdit.addEventListener("click", popupToggle);
 popupButtonClose.addEventListener("click", popupToggle);
 
-//функция из секции профиль берет значения и вставляет их в инпуты попапа
-let popupSave = function() {
-    profileName.textContent = popupName.value; 
-    profileDescription.textContent = popupProfession.value; 
-}
-
-//при нажатии кнопки "Сохранить" выполняются две функции(сохраняются
-// данные и закрывается попап)
-popupButtonSave.addEventListener("click", function() {
-    popupSave();
-    popupToggle();
-});
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
 function formSubmitHandler (evt) {
-    evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.                       
+    evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
+    profileName.textContent = popupName.value; 
+    profileDescription.textContent = popupProfession.value;
+    popupToggle();                   
 }
 
 // Прикрепляем обработчик к форме:

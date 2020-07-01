@@ -1,12 +1,12 @@
 @import url(./__button-add/profile__button-add.css);
 @import url(./__button-add-img/profile__button-add-img.css);
-@import url(./__button-add-icon/profile__button-add-icon.css);
 @import url(./__avatar/profile__avatar.css);
 @import url(./__button-edit/profile__button-edit.css);
 @import url(./__button-edit-img/profile__button-edit-img.css);
 @import url(./__name/profile__name.css);
 @import url(./__string/profile__string.css);
 @import url(./__description/profile__description.css);
+@import url(./__intro/profile__intro.css);
 
 .profile {
     max-width: 882px;
@@ -33,3 +33,4 @@
         margin: auto;
     }
 }
+

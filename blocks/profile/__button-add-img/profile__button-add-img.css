@@ -1,9 +1,20 @@
 .profile__button-add-img {
+    /* background-image: url("../../../images/plus.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 50% 50%; */
     width: 22px;
+    height: 22px;
 }
+
+.profile__button-add:hover .profile__button-add-img {
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
 
 @media screen and (max-width: 320px) {
     .profile__button-add-img {
         width: 17px;
+        height: 17px;
     }  
 }

@@ -2,6 +2,11 @@
     width: 10px;
 }
 
+.profile__button-edit:hover .profile__button-edit-img {
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
 @media screen and (max-width: 320px) {
     .profile__button-edit-img  {
         width: 7.5px;
