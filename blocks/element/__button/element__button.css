@@ -1,12 +1,19 @@
 .element__button {
-    max-height: 18.13px;
-    max-width: 30.13px;
+    padding: 0;
+    height: 18.13px;
+    width: 30.13px;
     border: 0px;
-    background: #FFFFFF;
     cursor: pointer;
+    background-image: url("../../../images/vector-like.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: 0;
+    outline-offset: 0;
 }
+
 
 .element__button:hover {
     transition: 0.3s;
     opacity: 0.6;
 }
+

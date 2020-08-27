@@ -30,89 +30,74 @@
                 </button>
             </section>
 
-            <section>
-                <ul class="elements">
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1088404-unsplash-6.jpg" alt="крепость" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Карачаевск</h2>
-                            <button class="element__button">
-                                <img src="./images/vector-like.svg" alt="like-icon">
-                            </button>
-                        </div>
-                    </li>
-
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1404681-unsplash-4.jpg" alt="гора Эльбрус" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__button">
-                                <img class="" src="./images/vector-like.svg" alt="like-icon">
-                            </button>                    
-                        </div>
-                    </li>
-
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1556355-unsplash-5.jpg" alt="горнолыжный курорт Дамбай" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__button">
-                                <img class="" src="./images/vector-like.svg" alt="like-icon">
-                            </button>   
-                        </div>
-                    </li>
-
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1404681-unsplash-4.jpg" alt="гора Эльбрус" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__button">
-                                <img class="" src="./images/vector-like.svg" alt="like-icon">
-                            </button>    
-                        </div>
-                    </li>
-
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1556355-unsplash-5.jpg" alt="горнолыжный курорт Дамбай" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__button">
-                                <img class="" src="./images/vector-like.svg" alt="like-icon">
-                            </button>
-                        </div>
-                    </li>
-
-                    <li class="element">
-                        <img src="./images/kirill-pershin-1088404-unsplash-6.jpg" alt="крепость" class="element__image">
-                        <div class="element__title-and-button">
-                            <h2 class="element__title">Карачаево-Черкесия</h2>
-                            <button class="element__button">
-                                <img class="" src="./images/vector-like.svg" alt="like-icon">
-                            </button>
-                        </div>
-                    </li>
-                </ul>
+            <section class="gallery">
+                <ul class="elements"></ul>
             </section>
             
-
-            <section class="popup">
+            <section class="popup popup_type_profile" id="popup">
                 <div class="popup__container">
-                    <button class="popup__button-close">
+                    <button class="popup__button-close popup_btn_close">
                         <img class="popup__button-close-img" src="./images/close-icon.svg" alt="иконка-закрыть">
                     </button>
                     <h3 class="popup__title">Редактировать профиль</h3>
                     <form class="popup__form" action="mailto:anastasiyastr1995@gmail.com" name="form-popup">
                         <input type="text" class="popup__input popup__input_type_name">
                         <input type="text" class="popup__input popup__input_type_profession">
-                        <button class="popup__button-save" type="submit">Сохранить</button>
+                        <button class="popup__button-save" id="button-save-edit" type="submit">Сохранить</button>
                     </form>
                 </div>
             </section>
+
+            <section class="popup popup_type_add-card" id="popup">
+                <div class="popup__container">
+                    <button class="popup__button-close popup__button-close_type_add-card popup_btn_close">
+                        <img class="popup__button-close-img" src="./images/close-icon.svg" alt="иконка-закрыть">
+                    </button>
+                    <h3 class="popup__title">Новое место</h3>
+                    <form class="popup__form popup__form_type_add-card" action="mailto:anastasiyastr1995@gmail.com" name="form-popup">
+                        <input type="text" class="popup__input popup__input_type_title" placeholder="Название">
+                        <input type="text" class="popup__input popup__input_type_link" placeholder="Ссылка на картинку">
+                        <button class="popup__button-save popup__button-create" id="button-save-add-card" type="submit">Создать</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="popup popup_type_image">
+                <div class="popup__container-image">
+                    <button class="popup__button-close popup__button-close_type_image">
+                        <img class="popup__button-close-img" src="./images/close-icon.svg" alt="иконка-закрыть">
+                    </button>
+                        <img class="popup__image" src="">
+                            <figcaption class="popup__subtitle"></figcaption>
+                    </button>  
+                </div>
+            </section>
+
+            <template id="cards">
+                <li class="element">
+                    <div class="element__button-delete"></div>
+                    <img alt="крепость" class="element__image">
+                    <div class="element__title-and-button">
+                        <h2 class="element__title"></h2>
+                        <button class="element__button">
+                            <!-- <img class="element__like element__like_active"  src="./images/vector-like.svg" alt="like-icon"> -->
+                        </button>
+                    </div>
+                </li>
+            </template>
+
         </main>
         
         <footer class="footer">
             <p class="footer__website">&copy; 2020 Mesto Russia</p>
         </footer>
     <script src="scripts/script.js"></script> 
+
+    <!-- <div style="position:fixed; top:0px; left:0px; display:table; background-color:rgba(255,255,255,0.5); width:100%; height:100%; z-index:100;">
+        <div style="display:table-cell;  vertical-align:middle; text-align: center;">
+            <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" style=" max-width:90%; max-height:90%;">
+        </div>
+    </div> -->
+
     </body>
 </html>

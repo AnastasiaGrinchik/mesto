@@ -8,32 +8,3 @@
     border-radius: 10px;
     margin-top: 195px;
 }
-
-@media screen and (max-width: 768px) {
-    .popup__container  {
-        max-width: 350px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .popup__container  {
-        max-width: 300px;
-    }
-} 
-@media screen and (max-width: 560px) {
-    .popup__container  {
-        max-width: 310px;
-    }
-} 
-
-@media screen and (max-width: 480px) {
-    .popup__container  {
-        max-width: 240px;
-    }
-} 
-
-@media screen and (max-width: 320px) {
-    .popup__container  {
-        max-width: 220px;
-    }
-} 
