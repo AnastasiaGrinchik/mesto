@@ -10,7 +10,7 @@ li {
     padding: 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 50%); 
+    grid-template-rows: repeat(3, 360px); 
     grid-column-gap: 18px;
     grid-row-gap: 20px;
     justify-content: center;
