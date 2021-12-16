@@ -3,4 +3,4 @@
 
 В данном проекте реализована адаптивная верстка макета о прекрасных местах России. Также созданы попапы, где задействован javascript.
 
-Ccылка - https://anastasiastreltsova.github.io/mesto/ 
+Ccылка - https://anastasiagrinchik.github.io/mesto/ 
